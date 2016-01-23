@@ -1,0 +1,84 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: sans-serif;
+}
+
+body{
+	background: #f1f1f1
+}
+
+#stack_box{
+	margin:20px auto;
+	width: 300px
+}
+
+#stack_box input#stack_title {
+	color: #777;
+	float: inline-block;
+	margin: 0;
+	width: 65%;
+	font-family: sans-serif;
+	font-size: 18px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: 10px;
+	border: none;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+#stack_box input#stack_title:focus,
+#stack_box select.stack_sort:focus{
+	box-shadow: 0 0 5px 1px #07C;
+	outline: none
+}
+
+#stack_box select.stack_sort {
+	color: #777;
+	display: inline-block;
+	margin: 0;
+	width: 25%;
+	font-family: sans-serif;
+	font-size: 18px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: 10px;
+	border: none;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+#stack_box div#stack_output{
+	display: none;
+	background: #fff;
+	margin: 0;
+	padding: 10px;
+	height: auto;
+	max-height: 300px;
+	overflow-y: scroll;
+	border-top: 1px solid #dcdcdc;
+}
+
+#stack_box div#stack_output p{
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 10px;
+	margin-top: 10px
+}
+
+#stack_box div#stack_output a{
+	color: #07C;
+	font-family: sans-serif;
+	text-decoration: none
+}
