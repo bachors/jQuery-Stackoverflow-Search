@@ -1,84 +1,78 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	background: transparent;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
+#stackjs{
 	font-family: sans-serif;
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
 }
 
-body{
-	background: #f1f1f1
-}
-
-#stack_box{
-	margin:20px auto;
-	width: 300px
-}
-
-#stack_box input#stack_title {
-	color: #777;
-	float: inline-block;
-	margin: 0;
+#stackjs input.stack_title {
 	width: 65%;
-	font-family: sans-serif;
-	font-size: 18px;
-	appearance: none;
-	box-shadow: none;
-	border-radius: none;
+	box-sizing: border-box;
+}
+
+#stackjs select.stack_sort {
+	width: 33%;
+	box-sizing: border-box;
+	float: right
+}
+
+#stackjs input.stack_title,
+#stackjs select.stack_sort {
 	padding: 10px;
-	border: none;
-	transition: box-shadow 0.3s, border 0.3s;
-}
-
-#stack_box input#stack_title:focus,
-#stack_box select.stack_sort:focus{
-	box-shadow: 0 0 5px 1px #07C;
-	outline: none
-}
-
-#stack_box select.stack_sort {
 	color: #777;
-	display: inline-block;
-	margin: 0;
-	width: 25%;
-	font-family: sans-serif;
-	font-size: 18px;
-	appearance: none;
-	box-shadow: none;
-	border-radius: none;
-	padding: 10px;
-	border: none;
-	transition: box-shadow 0.3s, border 0.3s;
+	display: inline;
+	margin: 0px;
+	border: 1px solid #ddd;
+	vertical-align:top;
 }
 
-#stack_box div#stack_output{
+#stackjs div.stack_output{
 	display: none;
 	background: #fff;
-	margin: 0;
-	padding: 10px;
+	margin: 0px;
+	padding: 0px;
 	height: auto;
 	max-height: 300px;
 	overflow-y: scroll;
-	border-top: 1px solid #dcdcdc;
+	border: 1px solid #dcdcdc;
+	position: absolute;
+	box-sizing: border-box;
 }
 
-#stack_box div#stack_output p{
+#stackjs div.stack_output div{
+	margin: 0px;
+	padding: 10px;
 	border-bottom: 1px solid #dcdcdc;
-	padding-bottom: 10px;
-	margin-top: 10px
+	box-sizing: border-box;
 }
 
-#stack_box div#stack_output a{
+#stackjs div.stack_output div p {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 5px;
+}
+
+#stackjs div.stack_output div span {
+	margin: 0px;
+	padding: 3px;
+	font-size: 0.8em;
+	margin-right: 20px;
+	color: #39739d;
+	background-color: #E1ECF4;
+	border-color: transparent;
+}
+
+#stackjs div.stack_output div span.date {
+	float: right;
+	margin-right: 0px;
+	padding: 0px;
+	color: #999;
+	background-color: transparent;
+}
+
+#stackjs div.stack_output a{
 	color: #07C;
-	font-family: sans-serif;
 	text-decoration: none
 }
